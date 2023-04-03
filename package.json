@@ -1,0 +1,11 @@
+{
+  "name": "float_plan",
+  "version": "1.0.0",
+  "description": "Safety for every boating outing",
+  "main": "index.js",
+  "scripts": {
+    "test": "test"
+  },
+  "author": "Nick Lackman",
+  "license": "ISC"
+}
