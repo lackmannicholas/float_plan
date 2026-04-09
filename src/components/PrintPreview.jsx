@@ -94,7 +94,7 @@ export default function PrintPreview({ plan }) {
 
         {/* Trip */}
         <Section title="Trip Details">
-          <Row label="Departure" value={vessel && trip.departureLocation} />
+          <Row label="Departure" value={trip.departureLocation} />
           <Row label="Destination" value={trip.destination} />
           <Row label="Departure Time" value={formatDateTime(trip.departureTime)} />
           <Row label="Expected Return" value={formatDateTime(trip.returnTime)} />
@@ -119,7 +119,7 @@ export default function PrintPreview({ plan }) {
 
         {/* Vehicle */}
         <Section title="Tow Vehicle / Trailer">
-          <Row label="Vehicle" value={[vessel && vehicle.vehicleYear, vehicle.vehicleMake, vehicle.vehicleModel].filter(Boolean).join(' ')} />
+          <Row label="Vehicle" value={[vehicle.vehicleYear, vehicle.vehicleMake, vehicle.vehicleModel].filter(Boolean).join(' ')} />
           <Row label="Color" value={vehicle.vehicleColor} />
           <Row label="License Plate" value={vehicle.licensePlate && `${vehicle.licensePlate}${vehicle.state ? ` (${vehicle.state})` : ''}`} />
           <Row label="Trailer Plate" value={vehicle.trailerPlate} />

@@ -1,16 +1,34 @@
-# React + Vite
+# Float Plan
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A web app for creating a boating float plan — a safety document you fill out before heading out on the water and leave with a trusted person ashore.
 
-Currently, two official plugins are available:
+## What is a Float Plan?
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+A float plan tells someone on shore where you're going, who is on board, what vessel you're using, and when you expect to return. If you don't check in or return by the expected time, the person holding the plan knows how to reach you, who to contact, and what actions to take.
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Vessel Information** — name, registration, type, hull color, engine, fuel capacity, VHF call sign
+- **Trip Details** — departure location, destination, planned route, departure and return times, plan left-with contact
+- **Persons on Board** — add/remove crew members with name, DOB, phone, address, and medical notes
+- **Safety Equipment** — checklist of 16 items (life jackets, flares, EPIRB, VHF radio, etc.)
+- **Tow Vehicle / Trailer** — vehicle info and where it's parked at the boat ramp
+- **Emergency Contact** — contact details and instructions for what to do if overdue
+- **Save Draft** — form data is saved locally in your browser so you can return to it
+- **Print / Save as PDF** — generates a clean, printer-friendly float plan to leave with someone ashore
 
-## Expanding the ESLint configuration
+## Running Locally
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+```bash
+npm install
+npm run dev
+```
+
+Then open [http://localhost:5173](http://localhost:5173) in your browser.
+
+## Building for Production
+
+```bash
+npm run build
+npm run preview
+```
